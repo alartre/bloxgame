@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "2fb1afb6-71c2-4389-aac2-ff79cffa4268",
+		"name": "Bloxgame-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19965375"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userId",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4567/user/createUser?username=Zripht&password=test50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"user",
+						"createUser"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Zripht"
+						},
+						{
+							"key": "password",
+							"value": "test50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4567/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Seed",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "userId",
+						"value": "9525da16-fe58-4af1-bb9e-65dce74fc7c3",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4567/user/updateSeed?seed=test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"user",
+						"updateSeed"
+					],
+					"query": [
+						{
+							"key": "seed",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get History",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "userId",
+						"value": "00809809-0d31-4f3f-a84a-9294cca3b662",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4567/spin/history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"spin",
+						"history"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "fbc2f81d-0df5-41c4-b16f-e04c65b66560",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Spin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userId",
+						"value": "f18414cd-52ad-4a88-9d03-da45ffce974f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4567/spin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"spin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4567/spin/3ae8bd6c-a706-4c32-a976-409fdce7ec1e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"spin",
+						"3ae8bd6c-a706-4c32-a976-409fdce7ec1e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
