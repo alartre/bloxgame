@@ -34,7 +34,7 @@ public class GetUserSeedRouteTest {
 
     @Test
     public void testHandle() throws Exception {
-        when(mockRequest.headers("X-User")).thenReturn("testUserId");
+        when(mockRequest.headers("userId")).thenReturn("testUserId");
 
         User mockUser = new User("testUserId", "testUser", "testpassword", "userSeed123", "serverSeed123", "serverSeedHashed123", 5);
         when(mockUserService.getUser("testUserId")).thenReturn(mockUser);
